@@ -1,0 +1,166 @@
+{
+    "extends":
+    [
+        "hardcore",
+        "hardcore/ts",
+        "hardcore/react",
+        "hardcore/react-performance",
+        "hardcore/fp",
+        "next/core-web-vitals",
+        "next/typescript"
+    ],
+
+    "parserOptions":
+    {
+        "project": true
+    },
+
+    "rules":
+    {
+        "import/no-cycle": "off",
+        "id-length": "off",
+        "simple-import-sort/imports": "off",
+        "react-perf/jsx-no-new-object-as-prop": "off",
+        "@arthurgeron/react-usememo/require-usememo": "off",
+        "perfectionist/sort-jsx-props": "off",
+        "@typescript-eslint/no-shadow": "off",
+        "react/iframe-missing-sandbox": "off",
+        "@typescript-eslint/no-magic-numbers": "off",
+        "perfectionist/sort-object-types": "off",
+        "perfectionist/sort-array-includes": "off",
+        "react-perf/jsx-no-jsx-as-prop": "off",
+        "react/jsx-no-bind": "off",
+        "react-perf/jsx-no-new-function-as-prop": "off",
+        "@typescript-eslint/no-confusing-void-expression": [ "error", { "ignoreArrowShorthand": true } ],
+        "@typescript-eslint/consistent-type-assertions": [ "error", { "assertionStyle": "as" } ],
+        "functional/readonly-type": [ "error", "keyword" ],
+        "etc/no-t": "off",
+        "perfectionist/sort-objects": "off",
+        "@typescript-eslint/sort-type-constituents": "off",
+        "@typescript-eslint/explicit-function-return-type": [ "error", { "allowExpressions": true } ],
+        "putout/putout": "off",
+        "unicorn/prevent-abbreviations": "off",
+        "import/no-unused-modules": "off",
+        "import/no-duplicates": "off",
+        "no-duplicate-imports": "off",
+        "max-lines": "off",
+        "max-len": "off",
+        "@typescript-eslint/prefer-readonly-parameter-types": "off",
+        "total-functions/no-unsafe-readonly-mutable-assignment": "off",
+        "react/jsx-props-no-spreading": "off",
+        "lines-around-comment": "off",
+        "etc/no-commented-out-code": "off",
+        "unused-imports/no-unused-imports": "warn",
+        "@typescript-eslint/no-misused-promises": [ "error", { "checksVoidReturn": false } ],
+        "no-console": "off",
+        "functional/no-loop-statements": "off",
+        "functional/immutable-data": "off",
+        "etc/prefer-interface": "off",
+        "@typescript-eslint/consistent-type-definitions": [ "error", "type" ],
+        "max-statements": "off",
+        "import/exports-last": "off",
+        "react/no-multi-comp": "off",
+        "react/no-unescaped-entities": "off",
+        "sonarjs/prefer-immediate-return": "off",
+        "padding-line-between-statements": "off",
+        "new-cap": "off",
+        "multiline-comment-style": "off",
+        "react/jsx-no-leaked-render": "off",
+        "react/jsx-max-props-per-line": [ "error", { "maximum": { "single": 3, "multi": 1 } } ],
+        "react/jsx-first-prop-new-line": "error",
+        "@typescript-eslint/prefer-destructuring": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "regexp/prefer-regexp-exec": "off",
+        "prefer-named-capture-group": "off",
+        "regexp/prefer-named-capture-group": "off",
+        "regexp/require-unicode-regexp": "off",
+        "regexp/require-unicode-sets-regexp": "off",
+        "regexp/no-super-linear-backtracking": "off",
+        "react/forbid-component-props": "off",
+        "array-func/prefer-array-from": "off",
+        "@stylistic/lines-around-comment": "off",
+        "@stylistic/spaced-comment": "off",
+        "@typescript-eslint/unbound-method": "off",
+        "unicorn/no-null": "off",
+        "@typescript-eslint/naming-convention": "off",
+        "@stylistic/max-len": "off",
+        "@stylistic/padding-line-between-statements": "off",
+        "react/destructuring-assignment": "off",
+        "react/require-default-props": "off",
+
+        // Disabled due to this: https://github.com/EvgenyOrekhov/eslint-config-hardcore/issues/732
+        "etc/no-misused-generics": "off",
+
+        // False positive with React.ReactNode
+        "sonar/function-return-type": "off",
+
+        // Does not appear to work consistently.
+        "unicorn/consistent-function-scoping": "off",
+
+        // Enums should not be sorted alphabetically.
+        "perfectionist/sort-enums": "off",
+
+        // It's an ongoing debate.
+        "etc/no-enum": "off",
+
+        // Ternaries can be good or can be hard to read. Can't make a blanket statement.
+        "unicorn/prefer-ternary": "off",
+
+        // TS fades unused variables, that's good enough.
+        "unused-imports/no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "sonar/no-dead-store": "off",
+
+        // if...else helps readability even with returns.
+        "no-else-return": "off",
+
+        // I'm not sure what the problem is with <div> as wrapper.
+        "@shopify/jsx-prefer-fragment-wrappers": "off",
+
+        // This is incorrect in some instances, e.g. Tailwind.
+        "import/no-extraneous-dependencies": "off",
+
+        // TODO comments are great.
+        "no-warning-comments": "off",
+
+        // I don't like switch.
+        "unicorn/prefer-switch": "off",
+
+        // let is ok in some cases.
+        "functional/no-let": "off",
+
+        // Clashes with @typescript-eslint/init-declarations
+        "no-undef-init": "off",
+
+        // Collapsible if can be useful for clarity.
+        "sonarjs/no-collapsible-if": "off",
+
+        // Can be useful for clarity.
+        "unicorn/no-lonely-if": "off",
+
+        "complexity": "off",
+
+        "sonarjs/cognitive-complexity": "off",
+
+        // Not the best for clarity sometimes.
+        "logical-assignment-operators": "off",
+
+        // Already covered by import/no-namespace
+        "sonar/no-wildcard-import": "off",
+
+        // We don't need to separate the thousands in numbers
+        "unicorn/numeric-separators-style": "off", 
+
+        // Braces are good for clarity.
+        "arrow-body-style": "off", 
+
+        // Is it really slowing things down?
+        "react-perf/jsx-no-new-array-as-prop": "off", 
+
+        // Destructuring for no good reason makes the code less readable.
+        "unicorn/consistent-destructuring": "off", 
+
+        // Not sure what the problem is here.
+        "import/no-namespace": "off"
+    }
+}

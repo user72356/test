@@ -1,0 +1,25 @@
+{
+    "compilerOptions":
+    {
+        "lib": [ "dom", "dom.iterable", "esnext" ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "plugins": [ { "name": "next" } ],
+        "paths": { "@/*": [ "./*" ] }, 
+        "noUncheckedIndexedAccess": true, 
+        "target": "ES6"
+    },
+
+    "include": [ "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/PhoneInput copy.tsx.no", "app/components/PhoneInput copy 2.tsx.no", "app/demo-data/components/PhoneInput.tsx", "app/reminders/functions/parseInitialForm2.ts", "app/reminders/templates/TemplateUtils.ts.bak", "app/reminders/templates/TemplateTypes.ts.bak", "app/reminders/templates/TemplateSelector.tsx.bak", "app/reminders/templates/TemplateContainerUtils.ts.bak", "app/reminders/initialForm/parseForm.ts.bak" ],
+
+    "exclude": [ "node_modules" ]
+}
